@@ -46,7 +46,7 @@ Node packages allow for pre-written Node modules to be installed and incorporate
 ```text
 npm i -g nodemon
 ```
-__NOTE: Node packages can be quite large, so you should always add the `node_modules` directory to your [.gitignore file](#creating-a-.gitignore-file)__
+__NOTE: Node packages can be quite large, so you should always add the `node_modules` directory to your [.gitignore file](#creating-a-gitignore-file)__
 
 ---
 
@@ -292,7 +292,7 @@ app.listen(process.env.PORT, ()=>{
 })
 ```
 
-__NOTE: Be sure to add your .env file to your [.gitignore](#creating-a-.gitignore-file) in case any of your variables contain sensitive information.__
+__NOTE: Be sure to add your .env file to your [.gitignore](#creating-a-gitignore-file) in case any of your variables contain sensitive information.__
 
 
 ## Sequelize
@@ -368,6 +368,6 @@ sequelize db:migrate
 ```text
  sequelize db:migrate:undo
  ```
-## Creating a .gitignore file
+## Creating a gitignore file
 
 A `.gitignore` file allows you to prevent certain files from bing pushed to remote repos on github. When using express, be sure to touch a .gitignore file in your project directory and write "node_modules" to prevent pushing of the (very large) directory that express creates (as well as any other files you do not want pushed to your repo).
